@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="800.0" minWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <Label layoutX="323.0" layoutY="124.0" text="Developers">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="232.0" text="Patrick Valadez">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="290.0" text="Nathan Hartley">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
