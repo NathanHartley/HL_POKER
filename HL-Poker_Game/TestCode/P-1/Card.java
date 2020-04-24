@@ -1,9 +1,3 @@
-/**
- * Project 6, Poker Game
- * The Card class runs certain methods to use cards in a java GUI Poker Game.
- * April 24, 2015
- * @author Shraddha Rathod
- */
 public class Card implements Comparable<Card> {
     /** sets constant symbol for clubs */
     public static final char CLUBS = 'c';

@@ -5,13 +5,14 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
+import java.lang;
 
 public class Evaluation {
 
-	// Vérifie si les cartes se suivent
+	
 	private static Boolean royalStraighFlush = false;
 
-	// Nombre de cartes par rapport aux sortes
+	
 	private static int clubsNumber = 0, spadesNumber = 0, heartsNumber = 0, diamondsNumber = 0;
 
 	// Nombre et le nom de la sorte le plus grand
