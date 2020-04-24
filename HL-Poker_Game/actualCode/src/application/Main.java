@@ -1,18 +1,20 @@
 package application;
 
 import javafx.application.Application;
+
 import javafx.stage.*;
 import javafx.scene.*;
-import javafx.scene.control.*;
+//import javafx.scene.control.*;
 import javafx.fxml.*;
+//import javafx.fxml.FXML;
 
 public class Main extends Application {
-	@FXML
-	Button Play;
-	@FXML
-	Button Exit;
-	@FXML
-	Button Credits;
+	//@FXML
+	//Button Play;
+	//@FXML
+	//Button Exit;
+	//@FXML
+	//Button Credits;
 
 	@Override
 	public void start(Stage primaryStage) {

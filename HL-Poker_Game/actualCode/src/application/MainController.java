@@ -1,25 +1,23 @@
 package application;
 
-import javafx.application.Application;
 import javafx.stage.*;
 import javafx.scene.*;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
 import javafx.fxml.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
-public class MainController extends Application implements EventHandler<ActionEvent>{
+public class MainController implements EventHandler<ActionEvent>{
 	private Scene scene2;
 	private Scene scene3;
-    private Stage primaryStage;
+   
 	@FXML
-	Button Play;
+	private Button Play;
 	@FXML
-	Button Exit;
+	private Button Exit;
 	@FXML
-	Button Credits;
+	private Button Credits;
 	
-	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		FXMLLoader loader2 = new FXMLLoader(getClass().getResource("view/PlayPage.fxml"));
@@ -28,15 +26,26 @@ public class MainController extends Application implements EventHandler<ActionEv
 		FXMLLoader loader3 = new FXMLLoader(getClass().getResource("view/CreditsPage.fxml"));
 		Parent root3 = loader3.load();
 		scene3 = new Scene(root3, 800, 800);
+		Play.setOnAction(this);
+		Exit.setOnAction(this);
+		Credits.setOnAction(this);
 	}
 
 	@Override
-	public void handle(ActionEvent e) {
+	public void handle(ActionEvent event) {
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		// TODO Auto-generated method stub
-/*
-		Play.setOnAction(e -> primaryStage.setScene(scene2));
-		Credits.setOnAction(e -> primaryStage.setScene(scene3));
-		Exit.setOnAction(e -> primaryStage.close());*/
+		if(event.getSource() == Play) {
+			window.setScene(scene2);
+			window.show();
+		}
+		if(event.getSource() == Exit) {
+			window.close();
+		}
+		if(event.getSource() == Credits) {
+			window.setScene(scene3);
+			window.show();
+		}
 	}
 
 
